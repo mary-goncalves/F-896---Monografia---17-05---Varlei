@@ -1,0 +1,63 @@
+\documentclass[12pt,twoside,a4paper]{report}
+
+\include{config/package}
+\include{config/layout}
+
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\include{config/capa}
+\include{config/contra_capa}
+\include{sections/dedicatoria}
+\include{sections/agradecimentos}
+\include{sections/epigrafe}
+\include{sections/resumo}
+\include{sections/abstract}
+%\include{sections/biografia}
+
+
+\include{sections/sumario}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%TEXTO%%%%%%%%%%%%%%%
+
+\include{sections/introducao}
+\include{sections/revisao_bibliografica}
+\include{sections/materiais_e_metodos}
+\include{sections/resultados}
+
+\include{sections/apendice}
+
+
+
+
+%\chapter{Conclusões} \label{conclusões}
+
+
+%% \bibliography{./nsav}
+%% \bibliographystyle{unsrt}
+\addcontentsline{toc}{chapter}{Bibliografia}
+\bibliographystyle{acm}
+\bibliography{references.bib}
+
+
+%\chapter*{Apêndices}
+%\markboth{Apêndices}{Apêndices}
+%\addcontentsline{toc}{chapter}{Apêndices}
+
+
+%\appendix
+%\title{Apêndices}
+
+%\chapter{Condições de contorno}
+
+%Para simular o hélio nas fases líquida e sólida nas densidades estudadas, utilizamos uma caixa de simulação com 64 ou 108
+
+%\section{Janzen e colaboradores - $V_{pr}$}
+
+%Os valores dos parâmetros para este potencial são os mesmos que para o 
+
+\end{document}
+
+

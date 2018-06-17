@@ -1,0 +1,67 @@
+\chapter{Resultados}
+\label{resultados}
+
+Neste capítulo apresentaremos os espectros de massa referentes aos \textit{clusters} de prata que caracterizam os resultados experimentais obtidos neste trabalho.
+
+\section{Espectros de nanopartículas de prata}
+\label{sec:producao_cluster}
+Foram realizados quatro experimentos para obtenção dos espectros de prata. Para cada um foram obtidos os dados dos \textit{clusters} com e sem a incidência de luz ultra violeta. 
+
+Os dados fornecidos pelo sistema de aquisição
+fornece o tempo de voo das partículas e as intensidade dos picos, como pode ser visto na Figura \ref{fig:ex_dados_brutos}. Depois de adquirido, os dados são tratados de forma a minimizar os ruídos existentes, e é feita uma normalização pela eficiência do detector de corrente, uma vez que as partículas com menor massa são melhor detectadas do que as partículas de maiores massas. O mesmo espectro com o tratamento de dados realizado pode ser visto na \ref{fig:0105_ledoff_dados_tratados}.
+
+
+
+
+\begin{figure}
+  \centering  
+  \includegraphics[width=0.7\textwidth]{graficos_resultados/0105_LEDOFF_semtratamento_exemplo.png}
+  \caption{Espectro de calibração sem tratamento de dados.}
+  \label{fig:ex_dados_brutos} 
+\end{figure}
+
+\begin{figure}
+  \centering  
+  \includegraphics[width=0.7\textwidth]{graficos_resultados/0105_LEDOFF_normalizado_mcp.png}
+  \caption{Espectro de calibração com tratamento de dados.}
+  \label{fig:0105_ledoff_dados_tratados} 
+\end{figure}
+
+Para indicar quais são os picos presentes nos espectros, e assim encontrar as indicações do número de prata ($Ag_{1},Ag_{2},Ag_{3}...$), é necessário fazer uma calibração, onde são relacionadas o tempo de voo de cada partícula com as massas das próprias de forma a obter uma tendência quadrática, como veremos a seguir.
+
+Com o objetivo de obter uma maior precisão na determinação dos tempos de voo das partículas de prata, é traçado uma curva gaussiana em cima de cada pico do espectro.
+
+A Tabela \ref{tab:picos_encontados} mostra os valores dos picos encontrados, em comparação com os valores dos picos calculados teoricamente pela Equação \ref{eq:relacao_massa_tempo}. Dentro de uma certa tolerância é possível perceber que os picos encontrados correspondem com os que eram esperados. \textcolor{red}{barra de erro nos dados}
+
+Sabendo o número de átomos de prata que corresponde a cada tempo de voo, é possível montar uma curva de calibração Massa $\times$ tempo, e assim realizar uma ajuste de uma curva quadrática para termos coeficientes que vão permitir identificar a massa de todo o espectro adquirido. O ajuste do espectro em questão pode ser vista na Figura \ref{fig:1105_curva_calib_ledoff}. As calibrações dos demais espectros serão apresentadas no Apêndice deste trabalho.
+
+\begin{figure}
+  \centering  
+  \includegraphics[width=0.7\textwidth]{graficos_resultados/0105_LEDOFF_curv_calib.png}
+  \caption{Curva de calibração.}
+  \label{fig:1105_curva_calib_ledoff} 
+\end{figure}
+
+
+\textcolor{red}{Precisa explicar que é massa/carga}
+
+
+
+
+\begin{equation}
+\label{eq:0105_polinomio_calib_ledoff}
+M = 0,3187e^{2} t^2 + 2,525 t - 40,18
+\end{equation}
+
+Utilizando a Equação \ref{eq:0105_polinomio_calib_ledoff} é possível mudar o eixo de tempo de voo, da aquisição de dados, para o seu valor corresponde em massa, conforme do gráfico da Figura \ref{fig:0105_LEDOFF_espec_calib_ag_massa}.
+
+\begin{figure}
+  \centering  
+  \includegraphics[width=0.7\textwidth]{graficos_resultados/0105_LEDOFF_espec_calib_ag_massa}
+  \caption{Espectro de prata plotado na forma de intensidade por massa em unidade de massa atômica.}
+  \label{fig:0105_LEDOFF_espec_calib_ag_massa} 
+\end{figure}
+
+\input{exp_01/LED_Tabela_latex.tex}
+
+
