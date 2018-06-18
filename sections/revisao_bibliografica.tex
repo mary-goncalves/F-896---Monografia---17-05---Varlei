@@ -4,7 +4,7 @@
 \section{Clusters}
 \label{c2-clusters}
 
-\textit{Clusters} são agregados de átomos ou moléculas, que variam desde dois a vários milhares de átomos e encontram-se na fronteira entre os átomos e o \textit{bulk}\footnote{\textit{Entende-se como "bulk" um conjunto de partículas grande o suficiente para que a média estatística de suas propriedades seja independente do número de partículas\cite{bulk}}}\cite{Heer,Brack}, por definição, eles se encontram em uma escala nanométrica ($ \leqslant 100$ nm).
+\textit{Clusters} são agregados de átomos ou moléculas, que variam desde três a vários milhares de átomos e encontram-se na fronteira entre os átomos e o \textit{bulk}\footnote{\textit{Entende-se como "bulk" um conjunto de partículas grande o suficiente para que a média estatística de suas propriedades seja independente do número de partículas\cite{bulk}}}\cite{Heer,Brack}, por definição, eles se encontram em uma escala nanométrica ($ \leqslant 100$ nm).
 No geral, os \textit{clusters} atômicos são classificados de acordo com seu tamanho: \textcolor{blue}{ muito pequenos, pequenos, médios ou grandes. Aglomerados classificados como muito pequenos e pequenos apresentam propriedades quânticas e possuem uma grande dependência com número de partículas que o compõe, essas propriedades não variam suavemente com seu tamanho, diferentemente dos \textit{clusters} médios e grandes.
 Normalmente os \textit{clusters} são classificados pelo números de àtomos(n) que o compõem: muito pequenos ($3<n<12$), pequenos($13<n<100$), médios ($100<n<1000$) e grandes ($1000<n<10^8$).}
 \textcolor{red}{Normalmente os \textit{clusters} são ditos pequenos quando contém da ordem de centas a mil partículas} Os nano-agregados considerados grandes possuem propriedades tendem a seguir as propriedades da matéria um \textit{bulk}.
@@ -114,19 +114,25 @@ nos espectros de massa foram apelidados de \textit{clusters mágicos}, ou \texti
 Para explicar a ocorrência desses \textit{clusters mágicos}, foi suposto o efeito de preenchimento de camadas eletrônicas em que a combinação entre o espectro de estados
 quantizados e o princípio de exclusão de Pauli resultam em efeitos de camada \cite{Brack}, ou seja, $1s^{2}$, $1s^{2}1p^{6}$, $1s^{2}1p^{6}1d^{10}$, $1s^{2}1p^{6}1d^{10} 2s^{2}$, … totalizando os números característicos do espectro de sódio mostrado na Figura \ref{fig:espec_na}. O modelo quântico de \textit{Jellium} \cite{Heer}, foi usado com sucesso para explicar a ocorrência desses \textit{clusters mágicos} \cite{capitulo_livro_shell}, como veremos na secção \ref{section_shell_model}.
 
-Para as nanopartículas consideradas grandes, o padrão de números mágicos aparece diferente e, no geral, ele é atribuído como uma consequência do preenchimento de camadas geométricas ou poliédricas de casca, assim o \textit{cluster} assume geometrias que minimizam a relação átomo-superfície, uma vez que os átomos da superfície possuem um número menor de vizinhos do que os átomos internos, e o \textit{cluster} tende a preferir a estrutura de menor energia, maximizando a fração de átomo \textcolor{red}{em massa ?????}. Essa estrutura geométrica da \textcolor{red}{casca} é bem conhecida nos \textit{clusters} de gás, e é característica de interações de curto alcance nas quais a \textcolor{red}{tendência é o empacotamento do próximo do atomo juntamente - vamos conversar sobre essa parte} com a necessidade de minimizar a energia superficial \cite{capitulo_livro_shell}.
+Para as nanopartículas consideradas grandes, o padrão de números mágicos aparece diferente e, no geral, ele é atribuído como uma consequência do preenchimento de camadas geométricas ou \textcolor{blue}{poliedros perfeitos com seu volume totalmente preenchido, como podemos ver na Figura \ref{fig:octaedro}.}
+
+Os \textit{cluster} assumem geometrias que minimizam a relação átomo-superfície, uma vez que os átomos da superfície possuem um número menor de vizinhos do que os átomos internos, e o \textit{cluster} tende a preferir a estrutura de menor energia. Essa estrutura geométrica é bem conhecida nos \textit{clusters} de gás, e é característica de interações de curto alcance nas quais a \textcolor{blue}{tendência é o empacotamento de forma a minimizar a energia superficial \cite{capitulo_livro_shell}}.
+
+\begin{figure}
+  \centering
+  \includegraphics[width=0.4\textwidth]{images/clusters/octaedro.jpg}
+  \caption{\textit{Cluster} octaédrico com 8 faces triangulares regulares e 111 planos  \cite{KATAKUSE1985229}.  }
+  \label{fig:octaedro}
+\end{figure}
 
 
 \section{Estrutura eletrônica \textit{shell model} para \textit{clusters} esféricos} \label{section_shell_model}
 
-\textcolor{red}{melhorar esta frase} Pretendemos apresentar uma visão geral das características do sistema eletrônico \textit{shell model}.
+ Pretendemos apresentar uma visão geral das características do sistema eletrônico \textit{shell model} \textcolor{blue}{para fundamentar e entender o aparecimento dos \textit{"números mágicos"} vistos na secção \ref{sec:experimentos_teo}}.
 
-O espectro de massa da \ref{fig:espec_na} sugere que os elétrons de valência nos \textit{clusters} de sódio são independentes e estão confinados em um potencial esfericamente simétrico. Assim como os átomos, com todas suas camadas eletrônicas preenchidas, as camadas eletrônicas de um \textit{cluster} com um número exato de elétrons para formar uma \textcolor{red}{estrutura geométrica poliédrica fechada} o torna muito estável. Quando um átomo for adicionado à nanoestrutura, seu elétron de valência ocupará um estado com energia maior e, assim, a estabilidade do \textit{cluster} será reduzida, reduzindo sua sua abundância no espectro, explicando a grande abundância após cada número de fechamento da camada. \cite{capitulo_livro_shell}.
+O espectro de massa da \ref{fig:espec_na} sugere que os elétrons de valência nos \textit{clusters} de sódio são independentes e estão confinados em um potencial esfericamente simétrico. Assim como os átomos, com todas suas camadas eletrônicas preenchidas, as camadas eletrônicas dos \textit{cluster} com um número exato de átomos para formar uma estrutura poliédrica fechada o torna muito estável. Quando um átomo for adicionado à nanoestrutura, seu elétron de valência ocupará um estado com energia maior e, assim, a estabilidade do \textit{cluster} será reduzida, reduzindo sua sua abundância no espectro, explicando a grande abundância após cada número de fechamento da camada. \cite{capitulo_livro_shell}.
 
-Os números quânticos dos \textit{cluster} metálicos são caracterizados de modo que cada camada possui um número quântico radial \textit{n} e o momento angular \textit{l}. Para um dado número quântico \textit{l}, o estado mais baixo tem $n = 1$, e assim por diante \textcolor{red}{completar! ou retirar.}.
-
-
-Uma primeira aproximação com abordagem quântica é o "Modelo de \textcolor{red}{melhor usar o jargão} Gota", que fornece uma descrição boa do comportamento observado na Figura \ref{fig:espec_na}. O \textit{cluster} é representado como uma esfera de raio \textit{R}, que está relacionada com número \textit{N} de átomos e o raio de Wigner-Seitz, $r_{s}$\cite{capitulo_livro_shell}\cite{livro_cap16_Misra2012527}.
+Uma primeira aproximação com abordagem quântica é o \textit{"Drop Model"}, que fornece uma descrição boa do comportamento observado na Figura \ref{fig:espec_na}. O \textit{cluster} é representado como uma esfera de raio \textit{R}, que está relacionada com número \textit{N} de átomos e o raio de Wigner-Seitz, $r_{s}$\cite{capitulo_livro_shell}\cite{livro_cap16_Misra2012527}.
 
 
 \begin{equation}
@@ -134,7 +140,7 @@ Uma primeira aproximação com abordagem quântica é o "Modelo de \textcolor{re
     R = r_{s}(N)^{\frac{1}{3}}
 \end{equation}
 
-\textcolor{red}{O raio de Wigner-Seitz, $r_{s}$, é definido como o raio do volume ocupado por cada elétron de valência, que é equivalente ao volume ocupado por cada átomo em um metal monovalente.}
+\textcolor{blue}{O raio de Wigner-Seitz, $r_{s}$, é definido como o raio de uma esfera cujo volume é igual ao volume médio ocupado por átomo em um sólido composto por um metal monovalente.}
 A estrutura interna do \textit{cluster} não é levada em consideração neste modelo, sendo ela equivalente à teoria de elétrons livres em sólidos. No entanto, a caixa sólida tem dimensões macroscópicas e níveis energéticos contínuos, enquanto o modelo para o \textit{cluster}, situado em nanoescala, os níveis de energia são discretos. Os primeiros níveis de energia para elétrons que não interagem em uma caixa esférica e o número de elétrons necessário para o preenchimento completo das camadas é $n= 2,8,18,20,34,40,58$ \cite{livro_cap16_Misra2012527}. Note que esses números condizem com os picos de maior abundância apontados no espectro da Figura \ref{fig:espec_na}.
 
 
@@ -148,7 +154,14 @@ Para o modelo de concha esféricas, os núcleos iônicos são substituídos por 
     \psi_{ n,l,m}(r, \theta, \phi) = R_{nl}(r)Y_{lm}(\theta, \phi)
 \end{equation}
 
-Existem três potenciais úteis para o estudo da física de \textit{cluster}: potencial do oscilador harmônico, potencial esférico de poço quadrado e potencial Woods-Saxon. Estes potenciais são mostrados graficamente na Figura \ref{fig:pocos}. \textcolor{red}{A figura ficou muito longe.}
+Existem três potenciais úteis para o estudo da física de \textit{cluster}: potencial do oscilador harmônico, potencial esférico de poço quadrado e potencial Woods-Saxon. Estes potenciais são mostrados graficamente na Figura \ref{fig:pocos}. 
+
+\begin{figure}
+  \centering
+  \includegraphics[width=0.5\textwidth]{images/clusters/pocos}
+  \caption{Comparação dos potenciais (a) harmônico, (b) Woods-Saxon e (c) poço quadrado. \cite{Heer}}
+  \label{fig:pocos}
+\end{figure}
 
 \subsubsection{Potencial do Oscilador Harmônico:}
 
@@ -158,8 +171,7 @@ O potencial mais simples é o potencial do oscilador harmônico $V_{r}$:
     V(r)= \frac{1}{2}m\omega_0r^2
 \end{equation}
 
-\noindent
-o potencial do poço \textcolor{red}{quadrado esférico (constante para $r<R$ e infinito para os demais)}. Como podemos ver na primeira coluna da Figura \ref{fig:pocos}, os níveis de energia para o potencial do oscilador harmônico são igualmente espaçados, altamente degenerados  \textcolor{red}{e são rotulados pelo número quântico \textit{v}}.
+Como podemos ver na primeira coluna da Figura \ref{fig:pocos}, os níveis de energia para o potencial do oscilador harmônico são igualmente espaçados, altamente degenerados  e são rotulados pelo número quântico $\nu$.
 
 
 A energia do potencial do oscilador harmônico é dada por:
@@ -168,17 +180,9 @@ A energia do potencial do oscilador harmônico é dada por:
     E_{v}= \left(\frac{3}{2}+v\right)h\omega_0
 \end{equation}
 
-Os números quânticos $(n,l)$ podem ser usados para qualquer potencial esfericamente simétrico. Assim, todos os orbitais com o mesmo valor de $(2n+l)$ são degenerados e as energias são escritas em termos do único número quântico $(2v+l-2)$ \textcolor{red}{que é?}. A energia potencial devido à carga de fundo é \cite{livro_cap16_Misra2012527}:
-\begin{equation}
-    \hbox{V}(r)
-= \left\{ \begin{array}{lll}
-\frac{3e^2N}{8\pi\epsilon_0R^3}\left(\frac{r^2}{3}-R^2\right) & \hbox{se} & r<R \\
-e^2 Z & \hbox{} &  \\
-\frac{e^2N}{4\pi\epsilon_0r} & \hbox{se} & r > R
-\end{array}\right.
-\end{equation}
+Os números quânticos $(n,l)$ podem ser usados para qualquer potencial esfericamente simétrico. Assim, todos os orbitais com o mesmo valor de $(2n+l)$ são degenerados e as energias são escritas em termos do único número quântico. 
 
-\subsubsection{\textcolor{red}{Potencial Esférico de Poço Quadrado:}}
+\subsubsection{Potencial de Poço Quadrado:}
 
 O potencial esférico de poços quadrados é descrito por:
 
@@ -200,7 +204,7 @@ em que C é uma constante. A função de onda radial $R_{nl}(r)$ para o potencia
     K_{nl}=\left[\frac{2m|E|}{\hbar^2}\right]^{\frac{1}{2}}
 \end{equation}
 
-Os níveis de energia são determinados pelas condições de contorno $j_{l}(K_{nl}R)=0$ e, para cada $l$, o primeiro zero de $j_l$ é dado o número quântico $n = 1$, o segundo $n = 2$, e assim por diante. A ordem dos níveis de energia (que são emprestados da física nuclear e são diferentes da física atômica) são $1s$, $1p$, $1d$, $2s$, $1f$, $2p$, $1g$, $2d$,... Se duas soluções tiverem o mesmo número de nós radiais, aquela com maior $l$ terá maior energia. Nessa notação, o número quântico principal em física atômica é igual a $n + l$. O interior do \textit{cluster} será eletricamente neutro se incluirmos a contribuição da correlação de troca para o potencial eletrostático dos elétrons, e o potencial efetivo será quase constante. \textcolor{red}{O potencial do poço quadrado representa essencialmente esse fenômeno} \cite{livro_cap16_Misra2012527}.
+Os níveis de energia são determinados pelas condições de contorno $j_{l}(K_{nl}R)=0$ e, para cada $l$, o primeiro zero de $j_l$ é dado o número quântico $n = 1$, o segundo $n = 2$, e assim por diante. A ordem dos níveis de energia (que são emprestados da física nuclear e são diferentes da física atômica) são $1s$, $1p$, $1d$, $2s$, $1f$, $2p$, $1g$, $2d$,... Se duas soluções tiverem o mesmo número de nós radiais, aquela com maior $l$ terá maior energia. Nessa notação, o número quântico principal em física atômica é igual a $n + l$. O interior do \textit{cluster} será eletricamente neutro se incluirmos a contribuição da correlação de troca para o potencial eletrostático dos elétrons, e o potencial efetivo será quase constante \cite{livro_cap16_Misra2012527}.
 
 
 \subsubsection{Potencial de Woods–Saxon:}
@@ -212,7 +216,7 @@ Em seu artigo, Knight et al\cite{electronic_Shell_sodium} utiliza o potencial de
 \end{equation}
 
 
-$U_0$ é a soma da energia de Fermi e a função de trabalho do metal a \textcolor{red}{granel}. $R$ é determinado pela equação \ref{eq:raio_R}. O parâmetro $\epsilon$ é usado para corresponder à variação do potencial na superfície. Para este potencial, não existem soluções analíticas.
+$U_0$ é a soma da energia de Fermi e a função de trabalho do metal massivo. $R$ é determinado pela equação \ref{eq:raio_R}. O parâmetro $\epsilon$ é usado para corresponder à variação do potencial na superfície. Para este potencial, não existem soluções analíticas.
 
 
 Uma comparação entre os três potenciais apresentados pode ser vista na Figura \ref{fig:pocos}. Nela podemos ver que a degenerescência dos estados do potencial Woods-Saxon é semelhante a do potencial do poço quadrado, mas a ordenação dos níveis de energia são diferentes.
@@ -224,12 +228,7 @@ Uma comparação entre os três potenciais apresentados pode ser vista na Figura
 Os números observados para 
 \textit{clusters} de sódio na Figura \ref{fig:espec_na} $(8, 20, 40, 58)$ indicam que o potencial efetivo de partícula única está entre uma caixa e um potencial Woods–Saxon. Mas o mais importante é o acordo desses números com as previsões do modelo simples, o modelo de elétrons livres é capaz de descrever sistema eletrônico de \textit{clusters} de sódio \cite{livro_Clusters_Fullerenes}.
 
-\begin{figure}
-  \centering
-  \includegraphics[width=0.5\textwidth]{images/clusters/pocos}
-  \caption{Comparação dos potenciais (a) harmônico, (b) Woods-Saxon e (c) poço quadrado. \cite{Heer}}
-  \label{fig:pocos}
-\end{figure}
+
 
 Em contrapartida, os "números mágicos"\ para os espectros de prata, cobre e ouro, mostrados nas Figuras \ref{fig:espec_ag},\ref{fig:espec_cu} e \ref{fig:espec_au}, ocorrem em
 $9, 21, 35,...$ , diferente dos \textit{clusters} de sódio. Eles possuem as camadas 3d, 4d e 5d, com a camada d preenchido com 10 elétrons e um único elétron de valência. No experimento de Katakuse et. al. 1985,  os \textit{clusters} foram produzidos carregados positivamente e, assim, o número de elétrons em um aglomerado era $N - 1$, desta forma os números mágicos correspondentes às cargas eletrônicas de conchas estão coerentes com os resultados experimentais \cite{Heer}.
