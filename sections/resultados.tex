@@ -1,7 +1,7 @@
 \chapter{Resultados}
 \label{resultados}
 
-Neste capítulo apresentaremos os espectros de massa referentes aos \textit{clusters} de prata que caracterizam os resultados experimentais obtidos neste trabalho.
+Neste capítulo apresentaremos os espectros de massa referentes aos \textit{clusters} de prata, que caracterizam os resultados experimentais obtidos neste trabalho.
 
 \section{Espectros de nanopartículas de prata}
 \label{sec:producao_cluster}
@@ -15,32 +15,39 @@ fornece o tempo de voo das partículas e as intensidade dos picos, como pode ser
 
 \begin{figure}
   \centering  
-  \includegraphics[width=0.7\textwidth]{graficos_resultados/0105_LEDOFF_semtratamento_exemplo.png}
+  \includegraphics[width=0.7\textwidth]{exp_01/LedOFF_sem_tratamento.png}
   \caption{Espectro de calibração sem tratamento de dados.}
   \label{fig:ex_dados_brutos} 
 \end{figure}
 
 \begin{figure}
   \centering  
-  \includegraphics[width=0.7\textwidth]{graficos_resultados/0105_LEDOFF_normalizado_mcp.png}
+  \includegraphics[width=0.7\textwidth]{exp_01/LedOFF_normalizado_mcp.png}
   \caption{Espectro de calibração com tratamento de dados.}
   \label{fig:0105_ledoff_dados_tratados} 
 \end{figure}
 
-Para indicar quais são os picos presentes nos espectros, e assim encontrar as indicações do número de prata ($Ag_{1},Ag_{2},Ag_{3}...$), é necessário fazer uma calibração, onde são relacionadas o tempo de voo de cada partícula com as massas das próprias de forma a obter uma tendência quadrática, como veremos a seguir.
+Para indicar quais são os picos presentes nos espectros, e assim encontrar as indicações do número de prata ($Ag_{1},Ag_{2},Ag_{3}...$), é necessário realizar uma calibração, \textcolor{blue}{onde são relacionadas o tempo de voo de cada partícula com o quociente massas/carga, como explicitado na Equação \ref{eq:tempo_voo}}, de forma a obter uma tendência quadrática, como veremos a seguir.
 
-Com o objetivo de obter uma maior precisão na determinação dos tempos de voo das partículas de prata, é traçado uma curva gaussiana em cima de cada pico do espectro.
+Com o objetivo de obter uma maior precisão na determinação dos tempos de voo das partículas de prata, é traçado uma curva gaussiana em cima de cada pico do espectro. \textcolor{blue}{A gaussiana traçada possui uma largura de $2\mu$ segundos, fato esse que será utilizado para encontrar as incertezas dos dados obtidos.}
 
-A Tabela \ref{tab:picos_encontados} mostra os valores dos picos encontrados, em comparação com os valores dos picos calculados teoricamente pela Equação \ref{eq:relacao_massa_tempo}. Dentro de uma certa tolerância é possível perceber que os picos encontrados correspondem com os que eram esperados. \textcolor{red}{barra de erro nos dados}
+A Tabela \ref{tab:picos_encontados_01} mostra os valores dos picos encontrados, em comparação com os valores dos picos calculados teoricamente pela Equação \ref{eq:relacao_massa_tempo}. \textcolor{blue}{ Note que os resultados obtidos encontram-se dentro da margem de incerteza, implicando que os picos encontrados correspondem com os que eram esperados.} 
 
-Sabendo o número de átomos de prata que corresponde a cada tempo de voo, é possível montar uma curva de calibração Massa $\times$ tempo, e assim realizar uma ajuste de uma curva quadrática para termos coeficientes que vão permitir identificar a massa de todo o espectro adquirido. O ajuste do espectro em questão pode ser vista na Figura \ref{fig:1105_curva_calib_ledoff}. As calibrações dos demais espectros serão apresentadas no Apêndice deste trabalho.
+\input{exp_01/LED_Tabela_latex.tex}
 
+Sabendo o número de átomos de prata que corresponde a cada tempo de voo, é possível plotar uma curva de calibração, \textcolor{blue}{massa (em função da carga) $\times$ tempo}, e assim realizar uma ajuste de uma curva quadrática, onde os coeficientes que vão permitir identificar a massa de todo o espectro adquirido, seguindo a equação \ref{eq:0105_polinomio_calib_ledoff}. O ajuste do espectro em questão pode ser vista na Figura \ref{fig:1105_curva_calib_ledoff}.
+
+\begin{equation}
+\label{eq:0105_polinomio_calib_ledoff}
+M(t) = 0,3304t^2 + 1,445t - 20,2
+\end{equation}
 \begin{figure}
   \centering  
-  \includegraphics[width=0.7\textwidth]{graficos_resultados/0105_LEDOFF_curv_calib.png}
+  \includegraphics[width=0.7\textwidth]{exp_01/LEDOFF_curv+erro_calib.png}
   \caption{Curva de calibração.}
   \label{fig:1105_curva_calib_ledoff} 
 \end{figure}
+
 
 
 \textcolor{red}{Precisa explicar que é massa/carga}
@@ -48,12 +55,26 @@ Sabendo o número de átomos de prata que corresponde a cada tempo de voo, é po
 
 
 
+
+
+
+Os erros foram calculados a partir da Equação \ref{eq:0105_polinomio_calib_ledoff}, da seguinte forma:
+
 \begin{equation}
-\label{eq:0105_polinomio_calib_ledoff}
-M = 0,3187e^{2} t^2 + 2,525 t - 40,18
+    \Delta M(t) = \frac{\partial M(t)}{\partial t} \times \Delta t
+\end{equation}
+onde $\Delta t = 2 \mu $ segundos.
+
+E então para este caso, a equação para o cálculo do erro é dada por:
+
+\begin{equation}
+    \Delta M(t) = (2\times 0,3304 \times t + 1,445) \times 2
 \end{equation}
 
+
 Utilizando a Equação \ref{eq:0105_polinomio_calib_ledoff} é possível mudar o eixo de tempo de voo, da aquisição de dados, para o seu valor corresponde em massa, conforme do gráfico da Figura \ref{fig:0105_LEDOFF_espec_calib_ag_massa}.
+
+
 
 \begin{figure}
   \centering  
@@ -62,6 +83,79 @@ Utilizando a Equação \ref{eq:0105_polinomio_calib_ledoff} é possível mudar o
   \label{fig:0105_LEDOFF_espec_calib_ag_massa} 
 \end{figure}
 
-\input{exp_01/LED_Tabela_latex.tex}
+Com o espectro em função da massa das \textit{clusters}, é possível identificar as partículas de prata com: um, dois, três... \textit{n} átomos, conforme mostra o gráfico da Figura \ref{fig:exp_01_LEDONOFF_N}. O gráfico apresenta também a relação entre os espectros com o LED ligado e desligado. Para obter a curva "\textit{LED ON}", foi utilizado o mesmo procedimento descrito anteriormente para a curva "\textit{LED OFF}".
 
+Os espectros referentes ao dados com a incidência de luz ultra violeta, assim como a curva de calibração, serão apresentados no Apêndice \ref{sec:apendice}.
 
+\begin{figure}
+  \centering  
+  \includegraphics[width=0.7\textwidth]{exp_01/Led_ON_Led_OFF_espectro_calib_prata_N_}
+  \caption{I-Espectro de prata, com LED ligado e desligado, na forma de intensidade por massa em unidade de massa atômica.}
+  \label{fig:exp_01_LEDONOFF_N}
+\end{figure}
+
+Para obter uma boa estatística, foram realizados mais três experimentos os quais os espectro de prata, com LED ligado e desligado, na forma de intensidade por massa em unidade de massa atômica, podem ser vistos nas Figuras \ref{fig:exp_02_LEDONOFF_N}, \ref{fig:exp_03_LEDONOFF_N} e \ref{fig:exp_04_LEDONOFF_N}. As curvas de calibração, e as tabelas utilizadas para conversão serão apresentadas na \ref{sec:apendice}
+
+\begin{figure}
+  \centering  
+  \includegraphics[width=0.7\textwidth]{exp_02/LED_ON_Led_OFF_espectro_calib_prata_N_.png}
+  \caption{II- Espectro de prata, com LED ligado e desligado, na forma de intensidade por massa em unidade de massa atômica.}
+  \label{fig:exp_02_LEDONOFF_N}
+\end{figure}
+
+\begin{figure}
+  \centering  
+  \includegraphics[width=0.7\textwidth]{exp_03/LED_ON_Led_OFF_espectro_calib_prata_N_.png}
+  \caption{III-Espectro de prata, com LED ligado e desligado, na forma de intensidade por massa em unidade de massa atômica.}
+  \label{fig:exp_03_LEDONOFF_N}
+\end{figure}
+
+\begin{figure}
+  \centering  
+  \includegraphics[width=0.7\textwidth]{exp_04/LED_ON_Led_OFF_espectro_calib_prata_N_.png}
+  \caption{IV-Espectro de prata, com LED ligado e desligado, na forma de intensidade por massa em unidade de massa atômica.}
+  \label{fig:exp_04_LEDONOFF_N}
+\end{figure}
+
+Note que nos resultados apresentados foi obtido o mesmo comportamento do experimento realizado por Katakuse et al \cite{KATAKUSE1985229}, em 1985 com, partícula de prata, já citado na secção \ref{sec:experimentos_teo}. Foram encontrados padrões com picos bem definidos em cada um espectro de massa e podemos apontar uma maior  abundância nos picos como número de átomos iguais, $n= 3,9,21,35...$. Esses picos ocorrem devido ao preenchimento das camadas eletrônicas, pelo princípio de exclusão de Pauli.
+
+ No nosso caso as partículas de prata produzidas são carregada negativamente, ou seja, possuem um elétrons a mais, dessa forma temos que:
+  \begin{equation*}
+    Ag_{2} \to Ag_{2} + e^{-}
+\end{equation*} 
+ Fato esse que resulta nos "números mágicos" iguais à $n= 3,9,21,35...$. Além disso podemos notar que existe uma maior abundância dos \textit{clusters} com números ímpares de átomos em relação ao \textit{clusters} com números pares de átomos, isso também se deve a estabilidade dessas partículas.
+ 
+ Fato que também podemos notar observando os espectros de partículas de prata apresentados nas Figuras \ref{fig:exp_01_LEDONOFF_N}, \ref{fig:exp_02_LEDONOFF_N} e \ref{fig:exp_04_LEDONOFF_N}, é que a intensidade dos picos, quando o LED encontra-se ligado, é superior a intensidade dos picos quando o LED encontra-se desligado. Isso ocorre devido ao fato da incidência de luz ultravioleta ioniza ainda mais as partículas que partem do \text{sputtering}, assim grande parte das partículas que antes eram neutras e eram barradas pelas lentes eletrostáticas agora são ionizadas e conseguem atingir a amostra, aumentando a intensidade da corrente medida.
+ 
+ Os gráficos das Figuras \ref{fig:exp_01_picos_LEDONOFF_N}, \ref{fig:exp_02_picos_LEDONOFF_N} e \ref{fig:exp_04_picos_LEDONOFF_N} mostram mais explicitamente o fato citado.
+ 
+ 
+ \begin{figure}
+  \centering  
+  \includegraphics[width=0.7\textwidth]{exp_01/Led_ON_Led_OFF_intensidade_prata_N_.png}
+  \caption{I - Relação de intensidade dos picos de prata, com LED ligado e desligado, na forma de intensidade por massa em unidade de massa atômica.}
+  \label{fig:exp_01_picos_LEDONOFF_N}
+\end{figure}
+ 
+ \begin{figure}
+  \centering  
+  \includegraphics[width=0.7\textwidth]{exp_02/LED_ON_Led_OFF_intensidade_prata_N_.png}
+  \caption{II - Relação de intensidade dos picos de prata, com LED ligado e desligado, na forma de intensidade por massa em unidade de massa atômica.}
+  \label{fig:exp_02_picos_LEDONOFF_N}
+\end{figure}
+ 
+  \begin{figure}
+  \centering  
+  \includegraphics[width=0.7\textwidth]{exp_04/LED_ON_Led_OFF_intensidade_prata_N_.png}
+  \caption{IV - Relação de intensidade dos picos de prata, com LED ligado e desligado, na forma de intensidade por massa em unidade de massa atômica.}
+  \label{fig:exp_04_picos_LEDONOFF_N}
+\end{figure}
+
+Fato esse que não fica evidente no gráfico apresentado na Figura \ref{fig:exp_03_picos_LEDONOFF_N}, uma vez que esse experimento foi realizado no final do tempo de vida útil do alvo de prata e a corrente costuma cair naturalmente nesta situação. O protocolo experimental era realizar primeiro as medidas com o LED desligado e depois com o LED ligado, assim com o alvo limitando a corrente fornecida, não havia um número átomos suficiente para ser ionizados pela luz ultravioleta e então é possível notar uma diferença de intensidade relativamente pequena.  
+
+\begin{figure}
+  \centering  
+  \includegraphics[width=0.7\textwidth]{exp_03/LED_ON_Led_OFF_intensidade_prata_N_.png}
+  \caption{IV - Relação de intensidade dos picos de prata, com LED ligado e desligado, na forma de intensidade por massa em unidade de massa atômica.}
+  \label{fig:exp_03_picos_LEDONOFF_N}
+\end{figure}
