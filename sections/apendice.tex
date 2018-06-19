@@ -1,40 +1,187 @@
 \appendix
-\chapter{Título do primeiro apêndice}
+\chapter{Dados utilizados para calibração}
 \label{sec:apendice}
+Nesta secção serão apresentados os dados complementares utilizados para a calibração dos experimentos.
 
-Este é o conteúdo do APÊNDICE A.
-\begin{table}
-\centering
-\caption{Tempo de voo dos átomos de Prata}
-\label{tab:picos_encontados}
-\begin{tabular}{|c|c|c|c|c|c|c|}
-\hline
-\begin{tabular}[c]{@{}c@{}}Prata\\ (N)\end{tabular} & \begin{tabular}[c]{@{}c@{}}Massa\\ teórica\\ (u.m.a)\end{tabular} & \begin{tabular}[c]{@{}c@{}}LED OFF\\ Massa\\ calculada\\ $\pm \Delta m$\\ (u.m.a)\end{tabular} & \begin{tabular}[c]{@{}c@{}}LED ON\\ Massa\\ calculada\\ $\pm \Delta m$\\ (u.m.a)\end{tabular} & \begin{tabular}[c]{@{}c@{}}Tempo\\ teórico\\ ($\mu s$)\end{tabular} & \begin{tabular}[c]{@{}c@{}}LED OFF\\ Tempo\\ calculado\\ $\pm \Delta t$\\ ($\mu s$)\end{tabular} & \begin{tabular}[c]{@{}c@{}}LED ON\\ Tempo\\ calculado\\ $\pm \Delta t$\\ ($\mu s$)\end{tabular} \\ \hline 
-1&107.86&108$\pm$26&105$\pm$25&17.30&17$\pm$2&17$\pm$2\\ \hline 
-2&215.72&216$\pm$35&217$\pm$35&24.47&24$\pm$2&24$\pm$2\\ \hline 
-3&323.58&324$\pm$42&324$\pm$42&29.96&30$\pm$2&30$\pm$2\\ \hline 
-4&431.44&426$\pm$48&433$\pm$48&34.60&34$\pm$2&34$\pm$2\\ \hline 
-5&539.30&537$\pm$54&539$\pm$54&38.68&38$\pm$2&38$\pm$2\\ \hline 
-6&647.16&651$\pm$59&650$\pm$59&42.38&42$\pm$2&42$\pm$2\\ \hline 
-7&755.02&751$\pm$63&751$\pm$63&45.77&46$\pm$2&46$\pm$2\\ \hline 
-8&862.88&862$\pm$67&859$\pm$68&48.93&49$\pm$2&49$\pm$2\\ \hline 
-9&970.74&968$\pm$71&966$\pm$72&51.90&52$\pm$2&52$\pm$2\\ \hline 
-10&1078.60&1087$\pm$76&1090$\pm$76&54.71&55$\pm$2&55$\pm$2\\ \hline 
-11&1186.46&1186$\pm$79&1184$\pm$79&57.38&58$\pm$2&58$\pm$2\\ \hline 
-12&1294.32&1300$\pm$83&1291$\pm$83&59.93&61$\pm$2&60$\pm$2\\ \hline 
-13&1402.18&1395$\pm$85&1396$\pm$86&62.38&63$\pm$2&63$\pm$2\\ \hline 
-14&1510.04&1507$\pm$89&1505$\pm$89&64.73&65$\pm$2&65$\pm$2\\ \hline 
-15&1617.90&1616$\pm$92&1618$\pm$92&67.00&68$\pm$2&68$\pm$2\\ \hline 
-16&1725.76&1728$\pm$95&1732$\pm$95&69.20&70$\pm$2&70$\pm$2\\ \hline 
-17&1833.62&1833$\pm$98&1833$\pm$98&71.33&72$\pm$2&72$\pm$2\\ \hline 
-18&1941.48&1941$\pm$101&1945$\pm$101&73.40&75$\pm$2&75$\pm$2\\ \hline 
-19&2049.34&2043$\pm$103&2044$\pm$104&75.41&77$\pm$2&76$\pm$2\\ \hline 
-20&2157.20&2161$\pm$106&2158$\pm$106&77.37&79$\pm$2&79$\pm$2\\ \hline 
-\end{tabular} 
-\end{table} 
+Para melhor organização os experimentos realizados serão divididos em: "Experimento I", "Experimento II", "Experimento III" e "Experimento IV".
+
+\section{Experimento I}
+A tabela e os dados utilizados para a calibração do espectro com LED desligado, já foram apresentadas na secção \ref{sec:result_producao_cluster}. A calibração do espectro com LED ligado pode ser vista na Figura \ref{fig:01_calib_ledON}.
+
+\begin{figure}
+  \centering  
+  \includegraphics[width=0.7\textwidth]{exp_01/LEDON_curv+erro_calib.png}
+  \caption{Curva de calibração para o LED ligado.}
+  \label{fig:01_calib_ledON} 
+\end{figure}
+
+Utilizando o processamento de dados foi obtido o espectro de partículas em função do tempo e em função da massa, como pode ser visto respectivamente nas Figuras \ref{fig:01_ledon_dados_tratados} e \ref{fig:01_ledon_massa}.
+
+\begin{figure}
+  \centering  
+  \includegraphics[width=0.7\textwidth]{exp_01/LedON_normalizado_mcp.png}
+  \caption{Espectro de calibração com tratamento de dados.}
+  \label{fig:01_ledon_dados_tratados} 
+\end{figure}
+
+\begin{figure}
+  \centering  
+  \includegraphics[width=0.7\textwidth]{exp_01/LEDON_espec_calib_ag_massa.png}
+  \caption{Espectro de calibração com tratamento de dados.}
+  \label{fig:01_ledon_massa} 
+\end{figure}
 
 
-\chapter{Outro apêndice}
+\section{Experimento II}
+A tabela e os dados utilizados para a calibração de ambos os estados do LED, pode ser vista na Tabela \ref{tab:picos_encontados_02}, assim como as curvas de calibração dos espectros que correspondem as Figuras \ref{fig:02_calib_ledOFF} e \ref{fig:02_calib_ledON}.
 
-Este será o texto do APÊNDICE B.
+\begin{figure}
+  \centering  
+  \includegraphics[width=0.7\textwidth]{exp_02/LEDOFF_curv+erro_calib.png}
+  \caption{Curva de calibração para o LED ligado.}
+  \label{fig:02_calib_ledOFF} 
+\end{figure}
+
+\begin{figure}
+  \centering  
+  \includegraphics[width=0.7\textwidth]{exp_02/LEDON_curv+erro_calib.png}
+  \caption{Curva de calibração para o LED ligado.}
+  \label{fig:02_calib_ledON} 
+\end{figure}
+
+\input{exp_02/LED_Tabela_latex_massa+ERRO_picos.tex}
+
+Utilizando o processamento de dados foi obtido o espectro de partículas em função do tempo e em função da massa, como pode ser visto respectivamente nas Figuras \ref{fig:02_ledoff_dados_tratados}, \ref{fig:02_ledoff_massa}, \ref{fig:02_ledon_dados_tratados} e \ref{fig:02_ledon_massa}.
+
+\begin{figure}
+  \centering  
+  \includegraphics[width=0.7\textwidth]{exp_02/LEDOFF_normalizado_mcp.png}
+  \caption{Espectro de calibração com tratamento de dados.}
+  \label{fig:02_ledoff_dados_tratados} 
+\end{figure}
+
+\begin{figure}
+  \centering  
+  \includegraphics[width=0.7\textwidth]{exp_02/LEDOFF_espec_calib_ag_massa.png}
+  \caption{Espectro de calibração com tratamento de dados.}
+  \label{fig:02_ledoff_massa} 
+\end{figure}
+
+
+
+\begin{figure}
+  \centering  
+  \includegraphics[width=0.7\textwidth]{exp_02/LEDON_normalizado_mcp.png}
+  \caption{Espectro de calibração com tratamento de dados.}
+  \label{fig:02_ledon_dados_tratados} 
+\end{figure}
+
+\begin{figure}
+  \centering  
+  \includegraphics[width=0.7\textwidth]{exp_02/LEDON_espec_calib_ag_massa.png}
+  \caption{Espectro de calibração com tratamento de dados.}
+  \label{fig:02_ledon_massa} 
+\end{figure}
+
+\section{Experimento III}
+A tabela e os dados utilizados para a calibração de ambos os estados do LED, pode ser vista na Tabela \ref{tab:picos_encontados_03}, assim como as curvas de calibração dos espectros que correspondem as Figuras \ref{fig:03_calib_ledOFF} e \ref{fig:03_calib_ledON}.
+
+\begin{figure}
+  \centering  
+  \includegraphics[width=0.7\textwidth]{exp_03/LEDOFF_curv+erro_calib.png}
+  \caption{Curva de calibração para o LED ligado.}
+  \label{fig:03_calib_ledOFF} 
+\end{figure}
+
+\begin{figure}
+  \centering  
+  \includegraphics[width=0.7\textwidth]{exp_03/LEDON_curv+erro_calib.png}
+  \caption{Curva de calibração para o LED ligado.}
+  \label{fig:03_calib_ledON} 
+\end{figure}
+
+\input{exp_03/LED_Tabela_latex_massa+ERRO_picos.tex}
+
+Utilizando o processamento de dados foi obtido o espectro de partículas em função do tempo e em função da massa, como pode ser visto respectivamente nas Figuras \ref{fig:03_ledoff_dados_tratados}, \ref{fig:03_ledoff_massa}, \ref{fig:03_ledon_dados_tratados} e \ref{fig:03_ledon_massa}.
+
+\begin{figure}
+  \centering  
+  \includegraphics[width=0.7\textwidth]{exp_03/LEDOFF_normalizado_mcp.png}
+  \caption{Espectro de calibração com tratamento de dados.}
+  \label{fig:03_ledoff_dados_tratados} 
+\end{figure}
+
+\begin{figure}
+  \centering  
+  \includegraphics[width=0.7\textwidth]{exp_03/LEDOFF_espec_calib_ag_massa.png}
+  \caption{Espectro de calibração com tratamento de dados.}
+  \label{fig:03_ledoff_massa} 
+\end{figure}
+
+
+
+\begin{figure}
+  \centering  
+  \includegraphics[width=0.7\textwidth]{exp_03/LEDON_normalizado_mcp.png}
+  \caption{Espectro de calibração com tratamento de dados.}
+  \label{fig:03_ledon_dados_tratados} 
+\end{figure}
+
+\begin{figure}
+  \centering  
+  \includegraphics[width=0.7\textwidth]{exp_03/LEDON_espec_calib_ag_massa.png}
+  \caption{Espectro de calibração com tratamento de dados.}
+  \label{fig:03_ledon_massa} 
+\end{figure}
+
+\section{Experimento IV}
+A tabela e os dados utilizados para a calibração de ambos os estados do LED, pode ser vista na Tabela \ref{tab:picos_encontados_04}, assim como as curvas de calibração dos espectros que correspondem as Figuras \ref{fig:04_calib_ledOFF} e \ref{fig:04_calib_ledON}.
+
+\begin{figure}
+  \centering  
+  \includegraphics[width=0.7\textwidth]{exp_04/LEDOFF_curv+erro_calib.png}
+  \caption{Curva de calibração para o LED ligado.}
+  \label{fig:04_calib_ledOFF} 
+\end{figure}
+
+\begin{figure}
+  \centering  
+  \includegraphics[width=0.7\textwidth]{exp_04/LEDON_curv+erro_calib.png}
+  \caption{Curva de calibração para o LED ligado.}
+  \label{fig:04_calib_ledON} 
+\end{figure}
+
+\input{exp_04/LED_Tabela_latex_massa+ERRO_picos.tex}
+
+Utilizando o processamento de dados foi obtido o espectro de partículas em função do tempo e em função da massa, como pode ser visto respectivamente nas Figuras \ref{fig:04_ledoff_dados_tratados}, \ref{fig:04_ledoff_massa}, \ref{fig:04_ledon_dados_tratados} e \ref{fig:04_ledon_massa}.
+
+\begin{figure}
+  \centering  
+  \includegraphics[width=0.7\textwidth]{exp_04/LEDOFF_normalizado_mcp.png}
+  \caption{Espectro de calibração com tratamento de dados.}
+  \label{fig:04_ledoff_dados_tratados} 
+\end{figure}
+
+\begin{figure}
+  \centering  
+  \includegraphics[width=0.7\textwidth]{exp_04/LEDOFF_espec_calib_ag_massa.png}
+  \caption{Espectro de calibração com tratamento de dados.}
+  \label{fig:04_ledoff_massa} 
+\end{figure}
+
+
+
+\begin{figure}
+  \centering  
+  \includegraphics[width=0.7\textwidth]{exp_04/LEDON_normalizado_mcp.png}
+  \caption{Espectro de calibração com tratamento de dados.}
+  \label{fig:04_ledon_dados_tratados} 
+\end{figure}
+
+\begin{figure}
+  \centering  
+  \includegraphics[width=0.7\textwidth]{exp_04/LEDON_espec_calib_ag_massa.png}
+  \caption{Espectro de calibração com tratamento de dados.}
+  \label{fig:04_ledon_massa} 
+\end{figure}
 
